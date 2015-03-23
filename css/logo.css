@@ -4,22 +4,7 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #f9f9f9 70%, #f2f2f2 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(70%, #f9f9f9), color-stop(100%, #f2f2f2));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #ffffff 0%, #f9f9f9 70%, #f2f2f2 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #ffffff 0%, #f9f9f9 70%, #f2f2f2 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #ffffff 0%, #f9f9f9 70%, #f2f2f2 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 70%, #f2f2f2 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=0);
-  /* IE6-9 */
+  background-image: url('../img/header-bg%20copy.png');
 }
 #svgcontainer {
   height: 25vw;
@@ -117,6 +102,7 @@ h3 {
 .post ul li {
   text-align: left;
   color: #535353;
+  line-height: 2;
 }
 .profile h1 {
   margin-top: 20px;
@@ -145,6 +131,14 @@ h3 {
 .profile-picture:hover img {
   transform: scale(1.1);
 }
+.profile span {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 300;
+}
 ul.social {
   text-align: center;
 }
@@ -155,4 +149,21 @@ ul.social {
   letter-spacing: 0.25rem;
   margin: 0 auto;
   font-size: 10px;
+}
+.logo-text {
+  letter-spacing: 0.125rem;
+  margin-left: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+.more-arrow {
+  position: absolute;
+  bottom: 15px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: #535353;
+  font-size: 24px;
+  width: 100%;
+  left: 0;
+  right: 0;
 }

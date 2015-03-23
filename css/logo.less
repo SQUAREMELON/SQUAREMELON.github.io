@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+@svgsize: 25vw;
+
+#main-header {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#svgcontainer {
+  height: @svgsize;
+  width: @svgsize;
+  margin: 0 auto;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+  border: 1px solid #eee;
+  transition: border 0.4s;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#svgcontainer:hover {
+  border: (@svgsize / 18 ) solid #6ED685;
+}
+
+#svgcontainer h2 {
+  z-index: 200;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  height: 100%;
+  font-size: (@svgsize / 15);
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%; left: -10%; margin: auto;
+  transform: rotatez(-90deg);
+}
+
+#svgcontainer:hover h2 {
+  top: (47.5% - 4em);
+  transform: rotatez(-15deg) translateX(10%);
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+#svgcontainer:hover svg {
+  background: #ea5866;
+}
+
+#svgcontainer * {
+  transition: 0.4s all;
+}
+
+#svgcontainer:hover svg {
+  transform-origin: 50% 50%;
+  transform: translateY(-5%) translateX(25%) rotateZ(75deg) scale(4);
+}
+
+#svgcontainer path {
+  opacity: 1;
+}
+
+#svgcontainer:hover path {
+  opacity: 0.125;
+}
+
+h3 {
+  position: absolute;
+  top: 20px; left: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  weight: 100;
+  color: #555;
+  padding: 0;
+  margin: 0;
+}

@@ -1,8 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+html {
+  width: 100%;
+  overflow: auto;
+}
+body {
+  overflow: auto;
+  width: 100%;
+}
 #main-header {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background-image: url('../img/header-bg%20copy.png');
 }

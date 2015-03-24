@@ -21,6 +21,7 @@ body {
   position: relative;
   top: 50vh;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   border: 1px solid #eee;
   transition: border 0.4s;
   border-radius: 50%;
@@ -46,11 +47,13 @@ body {
   top: 50%;
   left: -10%;
   margin: auto;
-  transform: rotatez(-90deg);
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
 }
 #svgcontainer:hover h2 {
   top: 43.5%;
   transform: rotatez(-15deg) translateX(10%);
+  -webkit-transform: rotatez(-15deg) translateX(10%);
 }
 svg {
   width: 100%;
@@ -62,9 +65,13 @@ svg {
 #svgcontainer * {
   transition: 0.4s all;
 }
+#svgcontainer svg {
+  -webkit-transform: translate3D(0, 0, 0) rotateZ(0deg) scale(1);
+}
 #svgcontainer:hover svg {
   transform-origin: 50% 50%;
   transform: translateY(-5%) translateX(25%) rotateZ(75deg) scale(4);
+  -webkit-transform: translateY(-5%) translateX(25%) rotateZ(75deg) scale(4);
 }
 #svgcontainer path {
   opacity: 1;

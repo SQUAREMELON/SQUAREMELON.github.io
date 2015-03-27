@@ -11,13 +11,34 @@ html {
 body {
   overflow: auto;
   width: 100%;
+  background-size: 500px;
+  background-position: 50% 100vh;
+  background-color: #fafafa;
+  background-repeat: repeat;
+}
+
+@keyframes header {
+  0% {
+    background-position: center top ~"calc(50% + 100px)";
+  }
+
+  100% {
+    background-position: center top ~"calc(50% - 100px)";
+  }
 }
 
 #main-header {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-image: url('../img/header-bg%20copy.png');
+  background-image: url('../img/header-bg%20copy3.png');
+  background-size: 200px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: #010c18;
+//  background: url('../img/header-bg%20copy2.png') 100px center;
+  animation: header 2s infinite;
+  animation-timing-function: linear;
 }
 
 #svgcontainer {
@@ -33,6 +54,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   background: #fff;
+  z-index: 200;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -114,6 +136,15 @@ h3 {
 
 .post h1 {
   text-align: center;
+}
+
+.post a {
+  color: #6ed685;
+  transition: 0.2s;
+}
+
+.post a:hover {
+  color: #ea5866;
 }
 
 .post h5 {
@@ -200,13 +231,30 @@ ul.social {
 
 .more-arrow {
   position: absolute;
-  bottom: 15px;
   margin: 0 auto;
   display: block;
   text-align: center;
-  color: #535353;
+  color: #fff;
   font-size: 24px;
   width: 100%;
   left: 0;
   right: 0;
+  animation: arrowmove 2s ease-in-out infinite;
+}
+
+@keyframes arrowmove {
+  0% {
+    bottom: 20px;
+    font-size: 32px;
+  }
+
+  50% {
+    bottom: 50px;
+    font-size: 32px;
+  }
+
+  100% {
+    bottom: 20px;
+    font-size: 32px;
+  }
 }

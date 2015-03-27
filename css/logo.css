@@ -29,7 +29,7 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-color: #010c18;
-  animation: header 2s infinite;
+  animation: header 8s infinite;
   animation-timing-function: linear;
 }
 #svgcontainer {
@@ -221,4 +221,8 @@ ul.social {
     bottom: 20px;
     font-size: 32px;
   }
+}
+::selection {
+  background: #010c18;
+  color: #fff;
 }

@@ -36,6 +36,7 @@ body {
   height: 25vw;
   width: 25vw;
   margin: 0 auto;
+  cursor: pointer;
   position: relative;
   top: 50vh;
   transform: translateY(-50%);
@@ -202,6 +203,7 @@ ul.social {
   display: block;
   text-align: center;
   color: #fff;
+  cursor: pointer;
   font-size: 24px;
   width: 100%;
   left: 0;

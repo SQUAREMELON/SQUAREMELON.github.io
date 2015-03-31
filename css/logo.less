@@ -17,6 +17,36 @@ body {
   background-repeat: repeat;
 }
 
+@-webkit-keyframes header {
+  0% {
+    background-position: center top ~"calc(50% + 100px)";
+  }
+
+  100% {
+    background-position: center top ~"calc(50% - 100px)";
+  }
+}
+
+@-o-keyframes header {
+  0% {
+    background-position: center top ~"calc(50% + 100px)";
+  }
+
+  100% {
+    background-position: center top ~"calc(50% - 100px)";
+  }
+}
+
+@-moz-keyframes header {
+  0% {
+    background-position: center top ~"calc(50% + 100px)";
+  }
+
+  100% {
+    background-position: center top ~"calc(50% - 100px)";
+  }
+}
+
 @keyframes header {
   0% {
     background-position: center top ~"calc(50% + 100px)";
@@ -37,6 +67,9 @@ body {
   background-attachment: fixed;
   background-color: #010c18;
 //  background: url('../img/header-bg%20copy2.png') 100px center;
+  -webkit-animation: header 8s infinite;
+  -moz-animation: header 8s infinite;
+  -o-animation: header 8s infinite;
   animation: header 8s infinite;
   animation-timing-function: linear;
 }
@@ -241,7 +274,61 @@ ul.social {
   width: 100%;
   left: 0;
   right: 0;
+  -webkit-animation: arrowmove 2s ease-in-out infinite;
+  -moz-animation: arrowmove 2s ease-in-out infinite;
+  -o-animation: arrowmove 2s ease-in-out infinite;
   animation: arrowmove 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes arrowmove {
+  0% {
+    bottom: 20px;
+    font-size: 32px;
+  }
+
+  50% {
+    bottom: 50px;
+    font-size: 32px;
+  }
+
+  100% {
+    bottom: 20px;
+    font-size: 32px;
+  }
+}
+
+@-moz-keyframes arrowmove {
+  0% {
+    bottom: 20px;
+    font-size: 32px;
+  }
+
+  50% {
+    bottom: 50px;
+    font-size: 32px;
+  }
+
+  100% {
+    bottom: 20px;
+    font-size: 32px;
+  }
+}
+
+@-o-keyframes arrowmove {
+  0% {
+    bottom: 20px;
+    font-size: 32px;
+  }
+
+  50% {
+    bottom: 50px;
+    font-size: 32px;
+  }
+
+  100% {
+    bottom: 20px;
+    font-size: 32px;
+  }
 }
 
 @keyframes arrowmove {
